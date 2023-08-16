@@ -5,7 +5,7 @@ const multer=require('multer');
 const {getUser,getAllUser,updateUser,deleteUser,updateProfileImage}=require('../controller/userController');
 const{signup,login,isAuthorised,protectRoute,forgetpassword,resetpassword,logout}=require('../controller/authController');
 
-// user ke options 
+// user  options 
 userRouter.route('/:id')
 .patch(updateUser)
 .delete(deleteUser)

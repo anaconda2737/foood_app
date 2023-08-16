@@ -3,7 +3,7 @@ const planRouter = express.Router();
 const{protectRoute, isAuthorised}=require('../controller/authController');
 const{getPlan,getAllPlans,createPlan,updatePlan,deletePlan,top3Plans}=require('../controller/planController');
 
-//all plans leke aayega 
+//all plans 
 planRouter.route('/allPlans')
 .get(getAllPlans)
 
